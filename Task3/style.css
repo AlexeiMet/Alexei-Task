@@ -9,6 +9,7 @@ body, html {
 	scroll-behavior: smooth;
 }
 body {
+	font-family: 'Nunito', sans-serif;
 	padding-bottom: 80px;
 	margin: 0;
 	font-size: 18px;
@@ -114,7 +115,6 @@ footer a:visited {
 }
 
 h2 {
-	font-family: 'Nunito', sans-serif;
 	display: flex;
 	align-items: center;
 	font-size: 44px;
@@ -127,7 +127,6 @@ h2:after {
 	height: 3px;
 }
 article {
-	font-family: 'Nunito', sans-serif;
 	padding-top: 60px;
 	line-height: 1.6;
 }
