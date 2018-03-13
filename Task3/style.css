@@ -1,0 +1,100 @@
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+body, html {
+	scroll-behavior: smooth;
+}
+body {
+	padding-bottom: 80px;
+	margin: 0;
+	font-size: 18px;
+	background: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url(https://i.stack.imgur.com/p9mUO.jpg) center / cover;
+	background-attachment: fixed;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 20px 0;
+	background-color: #fff;
+	box-shadow: 0 3px 15px rgba(0,0,0,.3);
+	border-bottom: 1px solid #aaa;
+}
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border-top: 1px solid #aaa;
+	padding: 16px 0;
+	text-align: center;
+	background-color: #fff;
+}
+footer a {
+	color: red;
+}
+footer a:visited {
+	color: red;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+#menu {
+	margin: 0;
+	padding: 0;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	list-style: none;
+}
+#menu li {
+	margin-right: 22px;
+}
+#menu li:last-child {
+	margin-right: 0;
+}
+#menu li:nth-child(2n + 1) a {
+	color: red;
+}
+#menu li:nth-child(2n) a {
+	color: #000;
+}
+#menu li:nth-child(2n + 1) a:visited {
+	color: ;
+}
+#menu li:nth-child(2n) a:visited {
+	color: ;
+}
+#menu a {
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+h2 {
+	font-size: 44px;
+}
+article {
+	padding-top: 80px;
+}
+
+#content article:nth-child(2n) {
+	text-align: right;
+}
+#content article:nth-child(2n) h2 {
+	color: #000;
+}
+#content article:nth-child(2n + 1) h2 {
+	color: red;
+}
