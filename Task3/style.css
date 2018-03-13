@@ -1,6 +1,10 @@
 *, *:after, *:before {
 	box-sizing: border-box;
 }
+*::selection {
+	background-color: red;
+	color: #fff;
+}
 body, html {
 	scroll-behavior: smooth;
 }
@@ -8,7 +12,7 @@ body {
 	padding-bottom: 80px;
 	margin: 0;
 	font-size: 18px;
-	background: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url(https://i.stack.imgur.com/p9mUO.jpg) center / cover;
+	background: linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,.3)), url(https://i.stack.imgur.com/p9mUO.jpg) center / cover;
 	background-attachment: fixed;
 }
 a {
@@ -84,9 +88,11 @@ footer a:visited {
 
 h2 {
 	font-size: 44px;
+	letter-spacing: 12px;
 }
 article {
 	padding-top: 80px;
+	line-height: 1.6;
 }
 
 #content article:nth-child(2n) {
