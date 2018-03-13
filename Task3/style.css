@@ -21,12 +21,22 @@ a {
 a:hover {
 	text-decoration: underline;
 }
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
 header {
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
-	padding: 20px 0;
+	padding: 14px 0;
 	background-color: #fff;
 	box-shadow: 0 3px 15px rgba(0,0,0,.3);
 	border-bottom: 1px solid #aaa;
@@ -40,6 +50,7 @@ footer {
 	padding: 16px 0;
 	text-align: center;
 	background-color: #fff;
+	box-shadow: 0 -3px 15px rgba(0,0,0,.3);
 }
 footer a {
 	color: red;
@@ -47,12 +58,27 @@ footer a {
 footer a:visited {
 	color: red;
 }
-.container {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 15px;
-}
 
+#logo a {
+	font-size: 32px;
+	color: red;
+	font-weight: 900;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: color .3s ease;
+}
+#logo a:hover {
+	text-decoration: none;
+	color: #000;
+}
+#logo a:hover span {
+	color: red;
+}
+#logo a span {
+	color: #000;
+	font-weight: normal;
+	transition: color .3s ease;
+}
 #menu {
 	margin: 0;
 	padding: 0;
@@ -87,20 +113,41 @@ footer a:visited {
 }
 
 h2 {
+	display: flex;
+	align-items: center;
 	font-size: 44px;
 	letter-spacing: 12px;
 }
+h2:after {
+	content: "";
+	display: block;
+	flex-grow: 1;
+	height: 3px;
+}
 article {
-	padding-top: 80px;
+	padding-top: 60px;
 	line-height: 1.6;
 }
-
+article:first-letter {
+	margin-right: 5px;
+	font-size: 40px;
+	line-height: 1.25;
+}
 #content article:nth-child(2n) {
 	text-align: right;
 }
 #content article:nth-child(2n) h2 {
 	color: #000;
 }
+#content article:nth-child(2n) h2:after {
+	margin-right: 15px;
+	order: -1;
+	background-color: #000;
+}
 #content article:nth-child(2n + 1) h2 {
 	color: red;
+}
+#content article:nth-child(2n + 1) h2:after {
+	margin-left: 15px;
+	background-color: red;
 }
