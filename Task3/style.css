@@ -60,6 +60,7 @@ footer a:visited {
 }
 
 #logo a {
+	font-family: 'Coda Caption', sans-serif;
 	font-size: 32px;
 	color: red;
 	font-weight: 900;
@@ -113,6 +114,7 @@ footer a:visited {
 }
 
 h2 {
+	font-family: 'Nunito', sans-serif;
 	display: flex;
 	align-items: center;
 	font-size: 44px;
@@ -125,6 +127,7 @@ h2:after {
 	height: 3px;
 }
 article {
+	font-family: 'Nunito', sans-serif;
 	padding-top: 60px;
 	line-height: 1.6;
 }
