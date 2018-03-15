@@ -41,6 +41,7 @@ header {
 	background-color: #fff;
 	box-shadow: 0 3px 15px rgba(0,0,0,.3);
 	border-bottom: 1px solid #aaa;
+	z-index: 9999;
 }
 footer {
 	position: fixed;
@@ -113,6 +114,12 @@ footer a:visited {
 	text-transform: uppercase;
 	font-size: 16px;
 }
+#menu a.highlight {
+	text-decoration: overline;
+}
+#menu a.highlight:hover {
+	text-decoration: underline overline;
+}
 
 h2 {
 	display: flex;
@@ -135,7 +142,7 @@ article:first-letter {
 	font-size: 40px;
 	line-height: 1.25;
 }
-#content article:nth-child(2n) {
+#content article:nth-child(2n) h2 {
 	text-align: right;
 }
 #content article:nth-child(2n) h2 {
@@ -154,8 +161,49 @@ article:first-letter {
 	background-color: red;
 }
 
+#Videos table {
+	width: 100%;
+}
+#Videos table, #Videos th, #Videos td {
+	border-collapse: collapse;
+	border: 5px solid #000;
+}
+#Videos table td {
+	width: 50%;
+	padding: 0;
+}
+
+.video-wrapper {
+	position: relative;
+	width: 100%;
+	padding-bottom: 56%;
+	height: 0;
+	background-color: #000;
+}
+.video-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#Table table, #Table tr, #Table th, #Table td {
+	border: 2px solid #000;
+	border-collapse: collapse;
+	vertical-align: top;
+}
+#Table th, #Table td {
+	padding: 5px;
+	line-height: 1.4;
+}
+
 #Images img {
 	width: 430px;
 	float: left;
 	margin-right: 25px;
+}
+
+#List ol ol {
+	list-style-type: lower-alpha;
 }
