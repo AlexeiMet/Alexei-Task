@@ -95,21 +95,20 @@
 				<h3>Lorem Table</h3>
 				<table>
 					<tr>
-						<th></th>
+						<th style="border: none"></th>
 						<th>Lorem.</th>
 						<th>Officia.</th>
 						<th>Dignissimos.</th>
 						<th>Aut.</th>
 					</tr>
 					<tr>
-						<td>Lorem.</td>
+						<td rowspan="2">Lorem.</td>
 						<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, vero?</td>
 						<td>Perferendis commodi reiciendis, cumque molestias quod eveniet, nulla reprehenderit doloribus!</td>
 						<td>Blanditiis labore id unde, quia nihil error minus velit, dolor.</td>
 						<td>Tempora ab atque perferendis adipisci quas accusantium dignissimos dolorem optio!</td>
 					</tr>
 					<tr>
-						<td>Lorem.</td>
 						<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, quam.</td>
 						<td>Rerum dolorem nisi debitis quo itaque illo non aut, ut.</td>
 						<td>Voluptate ea cupiditate eaque ipsa nobis hic facilis, ullam atque.</td>
@@ -118,16 +117,13 @@
 					<tr>
 						<td>Lorem.</td>
 						<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, tenetur.</td>
-						<td>Maxime possimus veritatis perferendis omnis obcaecati sunt deserunt molestias dolor.</td>
-						<td>Mollitia omnis, dolore, doloribus veniam molestiae natus itaque perspiciatis pariatur!</td>
+						<td colspan="2">Maxime possimus veritatis perferendis omnis obcaecati sunt deserunt molestias dolor.Mollitia omnis, dolore, doloribus veniam molestiae natus itaque perspiciatis pariatur!</td>
 						<td>Rem quaerat quo inventore provident ab eius odio est laudantium!</td>
 					</tr>
 					<tr>
 						<td>Lorem.</td>
 						<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, libero!</td>
-						<td>Exercitationem asperiores, odio veritatis quos voluptate nesciunt ex cum, mollitia!</td>
-						<td>Explicabo recusandae possimus consequuntur ratione molestiae accusantium in, earum. Illo.</td>
-						<td>Molestiae numquam eligendi molestias porro cupiditate harum quisquam odio doloribus.</td>
+						<td colspan="3">Exercitationem asperiores, odio veritatis quos voluptate nesciunt ex cum, mollitia! Explicabo recusandae possimus consequuntur ratione molestiae accusantium in, earum. Illo.</td>
 					</tr>
 				</table>
 				<p>Corrupti minus, blanditiis minima mollitia asperiores natus recusandae voluptatum architecto reprehenderit ipsam nostrum fugiat eveniet quis atque doloremque quasi vero dolore beatae eum aliquid et quia doloribus est. Labore quia, hic repellendus amet, modi deserunt, illo, non molestiae itaque fugiat est. Enim ex est sed illum odio placeat voluptatem, dolorum, quidem, magni sit explicabo adipisci magnam quas corporis eaque ad!</p>
@@ -161,39 +157,59 @@
 			</article>
 			<article id="List">
 				<h2>List</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt magnam harum, facere delectus rerum quo dolor qui non ea pariatur, architecto amet et ut, corrupti labore ad dignissimos magni! Distinctio et voluptatum perferendis provident, expedita eos qui eveniet nisi cupiditate similique, mollitia voluptatem, at quae laborum debitis odio aspernatur. Numquam explicabo a illum saepe consequuntur harum, fugiat ad aliquam distinctio.</p>
-				<p>Esse suscipit debitis mollitia pariatur veniam quaerat dolor nobis sunt sed ab, dicta porro. Consequatur magnam nemo repellat aperiam quo eius magni maxime perspiciatis dignissimos molestias, amet sed blanditiis expedita delectus unde, odio porro officia. Cumque laboriosam suscipit, voluptatum rerum debitis autem, tempora illum non mollitia doloremque minus. Quidem quasi quaerat odit sunt itaque, ad tempore non eaque! Repellat, sunt.</p>
-				<h3>Lorem Ordered List</h3>
-				<ol>
-					<li>Lorem ipsum.</li>
-					<li>Blanditiis, id.</li>
-					<li>Fugit, distinctio.</li>
-					<li>Libero, impedit.
-						<ol>
-							<li>Lorem.</li>
-							<li>Praesentium.</li>
-							<li>Ducimus.</li>
-						</ol>
-					</li>
-					<li>Rem, dolore.</li>
-					<li>Dolores, sed!</li>
-					<li>Et, ea.</li>
-					<li>Expedita, exercitationem!</li>
-				</ol>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt magnam harum, facere <span class="text-italic">delectus rerum quo dolor qui non ea pariatur</span>, architecto amet et ut, corrupti labore ad dignissimos magni! Distinctio et voluptatum perferendis provident, expedita eos qui eveniet nisi cupiditate similique, mollitia voluptatem, at quae laborum debitis odio aspernatur. Numquam explicabo a illum saepe consequuntur harum, fugiat ad aliquam distinctio.</p>
+				<p><span class="text-italic">Esse suscipit debitis mollitia pariatur veniam quaerat dolor nobis sunt sed ab, dicta porro. Consequatur magnam nemo repellat aperiam quo eius magni maxime perspiciatis dignissimos molestias, amet sed blanditiis expedita delectus unde, odio porro officia.</span> Cumque laboriosam suscipit, voluptatum rerum debitis autem, tempora illum non mollitia doloremque minus. Quidem quasi quaerat odit sunt itaque, ad tempore non eaque! Repellat, sunt.</p>
+				<div class="order-list list-section">
+					<h3>Lorem Ordered List</h3>
+					<ol>
+						<li>Lorem ipsum.</li>
+						<li>Blanditiis, id.</li>
+						<li>Fugit, distinctio.</li>
+						<li>Libero, impedit.
+							<ol>
+								<li>Lorem.</li>
+								<li>Praesentium.</li>
+								<li>Ducimus.</li>
+							</ol>
+						</li>
+						<li>Rem, dolore.</li>
+						<li>Dolores, sed!</li>
+						<li>Et, ea.</li>
+						<li>Expedita, exercitationem!</li>
+					</ol>
+				</div>
+				<div class="fancy-style-list list-section">
+					<h3>Fancy-style List</h3>
+					<ul>
+						<li><a href="https://www.youtube.com/watch?v=_UNWfSHCmbw">Iron Maiden - Twilight Zone</a></li>
+						<li>
+							<a href="https://www.youtube.com/watch?v=82d_Az9pSls&t=2905s">Ария - Альбом: Генератор Зла</a>
+							<ul>
+								<li><a href="https://www.youtube.com/watch?v=bZJL57idF2c">Ария - Беги за солнцем</a></li>
+								<li><a href="https://youtu.be/Cc106oKAA20">Ария - Отшельник</a></li>
+								<li><a href="https://youtu.be/eX_ooqBUdTw">Ария - Замкнутый круг</a></li>
+							</ul>
+						</li>
+						<li><a href="https://youtu.be/L397TWLwrUU">Judas Priest - Breaking The Law</a></li>
+						<li><a href="https://youtu.be/AOCPMbvcaTM">Мастер - Руки прочь</a></li>
+						<li><a href="https://youtu.be/455-CIgc7co">Metallica - Trapped Under Ice</a></li>
+						<li><a href="https://youtu.be/uGHsxMqpL0c">Anthrax - Madhouse</a></li>
+					</ul>
+				</div>
 				<p>Nostrum doloribus labore consectetur qui reiciendis iure sed voluptas, nam laborum temporibus accusamus eaque animi sit suscipit repudiandae ad omnis facere cupiditate molestiae minima inventore praesentium commodi odit minus. A unde temporibus culpa veritatis consectetur non autem amet adipisci libero inventore veniam fugiat voluptatem eligendi, sapiente ad accusantium animi facere sit commodi, error aut. Porro harum voluptates in voluptatum error.</p>
 				<h3>Lorem Term List</h3>
 				<dl>
-					<dt>Term 1</dt>
+					<dt class="text-italic">Term 1</dt>
 					<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, fugiat.</dd>
-					<dt>Term 2</dt>
+					<dt class="text-italic">Term 2</dt>
 					<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque explicabo fugiat harum fuga cum culpa inventore sint quo quia dolor suscipit voluptates, id saepe adipisci tenetur aperiam, placeat laudantium. Veniam.</dd>
-					<dt>Term 3</dt>
+					<dt class="text-italic">Term 3</dt>
 					<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur laudantium aut, eius. Amet praesentium non, maxime culpa maiores harum quae iure laudantium consectetur qui.</dd>
-					<dt>Term 4</dt>
+					<dt class="text-italic">Term 4</dt>
 					<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, a mollitia? Eveniet vero maiores dignissimos, est iure architecto quos quaerat assumenda fuga nisi a culpa omnis dolor velit rerum suscipit officiis minus excepturi debitis sed accusantium autem repudiandae. Pariatur officiis adipisci eius, facere impedit voluptatem culpa alias molestiae aspernatur atque.</dd>
 				</dl>
 				<p>Id, modi! Ipsam quod corporis ex porro sunt maxime nam, consequuntur dolor mollitia alias maiores veritatis, perferendis temporibus repellat autem! Saepe, quia. In repellendus iste sunt totam repudiandae impedit qui doloremque magni quaerat repellat, provident fuga unde explicabo quo expedita consectetur nam suscipit debitis excepturi amet maxime commodi nemo aspernatur atque! Rerum suscipit dolorem, id amet, facilis delectus assumenda non.</p>
-				<p>Doloribus, nobis reprehenderit commodi ex laudantium deleniti dicta molestiae nihil laborum similique repudiandae dolore qui fugiat doloremque voluptatem et maiores velit voluptas accusamus eius illum nemo! Quaerat similique enim ducimus fuga dolore totam ut, reiciendis numquam provident rerum fugit unde ab sint? Architecto dolorem molestiae illo repellat minus quibusdam! Adipisci ducimus beatae quisquam odio recusandae nisi, optio eligendi, laudantium quasi.</p>
+				<p>Doloribus, nobis reprehenderit commodi ex laudantium deleniti dicta molestiae nihil laborum similique repudiandae dolore qui fugiat doloremque voluptatem et maiores velit voluptas accusamus eius illum nemo! Quaerat similique enim ducimus fuga dolore totam ut, reiciendis numquam provident rerum fugit unde ab sint? Architecto dolorem molestiae illo repellat minus quibusdam! <span class="text-italic">Adipisci ducimus beatae quisquam odio recusandae nisi, optio eligendi, laudantium quasi.</span></p>
 			</article>
 		</div>
 	</section>

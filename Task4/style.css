@@ -13,6 +13,7 @@ body {
 	padding-bottom: 80px;
 	margin: 0;
 	font-size: 18px;
+	color: #000;
 	background: linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,.3)), url(https://i.stack.imgur.com/p9mUO.jpg) center / cover;
 	background-attachment: fixed;
 }
@@ -31,6 +32,9 @@ a:hover {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+.text-italic {
+	font-style: italic;
 }
 header {
 	position: fixed;
@@ -188,7 +192,10 @@ article:first-letter {
 	height: 100%;
 }
 
-#Table table, #Table tr, #Table th, #Table td {
+#Table table {
+	border-collapse: collapse;
+}
+#Table th, #Table td {
 	border: 2px solid #000;
 	border-collapse: collapse;
 	vertical-align: top;
@@ -206,4 +213,36 @@ article:first-letter {
 
 #List ol ol {
 	list-style-type: lower-alpha;
+}
+#List ul {
+	list-style: none;
+}
+#List ul a {
+	display: flex;
+	align-items: center;
+	color: #000;
+	text-decoration: none;
+	transition: color .2s;
+}
+#List ul a:before {
+	content: "\276F";
+	display: block;
+	margin-right: 15px;
+	font-size: 14px;
+	transition: transform .2s ease, background-color .2s;
+}
+#List ul>li>ul>li a:before {
+	transform: rotate(-90deg);
+}
+#List ul a:hover {
+	color: red;
+}
+#List ul>li>a:hover:before {
+	transform: translateX(10px);
+}
+#List .list-section {
+	display: inline-block;
+	width: 100%;
+	max-width: 500px;
+	vertical-align: top;
 }
