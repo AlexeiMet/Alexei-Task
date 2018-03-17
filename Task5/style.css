@@ -1,0 +1,117 @@
+*,*:before,*:after {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+}
+.container {
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+header {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 300px;
+	overflow: hidden;
+}
+header:before {
+	content: '';
+	position: absolute;
+	top: -30px;
+	bottom: -30px;
+	left: -10px;
+	right: -10px;
+	transform: rotate(-3deg);
+	background: url(soc.png) center repeat / 50%;
+}
+header h1 {
+	font-family: 'Sedgwick Ave', cursive;
+	padding: 20px 26px 18px;
+	background-color: #fff;
+	outline: 3px solid #000;
+	outline-offset: -8px;
+	box-shadow: 0 2px 0 rgba(0,0,0,.3);
+}
+.button-section {
+	margin-top: 15px;
+	padding: 10px 30px;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+}
+#second-button-section .button-section {
+	background-color: #333;
+}
+
+button {
+	padding: 6px 8px;
+	vertical-align: bottom;
+	font-weight: bold;
+	color: #fff;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	box-shadow: 0 1.5px 2px rgba(0,0,0,.6);
+	cursor: pointer;
+}
+.big-button {
+	font-size: 20px;
+}
+.medium-button {
+	font-size: 14px;
+}
+.small-button {
+	font-size: 10px;
+}
+.pink-button {
+	background: linear-gradient(#e743a3, #e22192);
+	box-shadow: 0 1.5px 1.5px #c40877, 0 3px 3px rgba(0,0,0,.3);
+}
+.pink-button:hover {
+	background: linear-gradient(#e22192, #e743a3);
+}
+
+.green-button {
+	background: linear-gradient(#a7cb39, #9dc819);
+	box-shadow: 0 1.5px 1.5px #7d8b52, 0 3px 3px rgba(0,0,0,.3);
+}
+.green-button:hover {
+	background: linear-gradient(#9dc819, #a7cb39);
+}
+
+.blue-button {
+	background: linear-gradient(#4a95e9, #3f8fe9);
+	box-shadow: 0 1.5px 1.5px #2471c8, 0 3px 3px rgba(0,0,0,.3);
+	vertical-align: middle;
+}
+.blue-button:hover {
+	background: linear-gradient(#3f8fe9, #4a95e9);
+}
+
+.red-button {
+	background: linear-gradient(#ea4949, #eb3d3d);
+	box-shadow: 0 1.5px 1.5px #cb2222, 0 3px 3px rgba(0,0,0,.3);
+	vertical-align: middle;
+}
+.red-button:hover {
+	background: linear-gradient(#eb3d3d, #ea4949);
+}
+
+.orange-button {
+	background: linear-gradient(#ff7628, #ff6e1a);
+	box-shadow: 0 1.5px 1.5px #e15000, 0 3px 3px rgba(0,0,0,.3);
+}
+.orange-button:hover {
+	background: linear-gradient(#ff6e1a, #ff7628);
+}
+
+.yellow-button {
+	background: linear-gradient(#ffc74c, #ffbe2d);
+	box-shadow: 0 1.5px 1.5px #e19f12, 0 3px 3px rgba(0,0,0,.3);
+}
+.yellow-button:hover {
+	background: linear-gradient(#ffbe2d, #ffc74c);
+}
