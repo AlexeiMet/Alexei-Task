@@ -1,0 +1,204 @@
+*,*:before,*:after {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+}
+
+.t6-container {
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.t6-header {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 300px;
+	overflow: hidden;
+}
+
+.t6-soc-background {
+	display: flex;
+	align-content: center;
+	flex-wrap: wrap;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: #fff;
+}
+.t6-header__background {
+	top: -10vw;
+	bottom: -10vw;
+	left: -80px;
+	right: -60px;
+	background-color: #ddd;
+	transform: rotate(-5deg);
+}
+.t6-soc-background__soc {
+	width: 40px;
+	height: 40px;
+	margin-right: 25px;
+	margin-bottom: 25px;
+	background-image: url(soc.png);
+	background-size: 440px;
+	border-radius: 10px;
+}
+.t6-soc-background__soc_pos_1 {
+	background-position: 0 80px;
+}
+.t6-soc-background__soc_pos_2 {
+	background-position: -40px 80px;
+}
+.t6-soc-background__soc_pos_3 {
+	background-position: -80px 80px;
+}
+.t6-soc-background__soc_pos_4 {
+	background-position: -120px 80px;
+}
+.t6-soc-background__soc_pos_5 {
+	background-position: -160px 80px;
+}
+.t6-soc-background__soc_pos_6 {
+	background-position: -200px 80px;
+}
+.t6-soc-background__soc_pos_7 {
+	background-position: -240px 80px;
+}
+.t6-soc-background__soc_pos_8 {
+	background-position: -280px 80px;
+}
+.t6-soc-background__soc_pos_9 {
+	background-position: -320px 80px;
+}
+.t6-soc-background__soc_pos_10 {
+	background-position: -360px 80px;
+}
+.t6-soc-background__soc_pos_11 {
+	background-position: -400px 80px;
+}
+
+.t6-main-title {
+	display: inline-block;
+	font-family: 'Sedgwick Ave', cursive;
+	padding: 24px 28px 22px;
+	background-color: #fff;
+	outline: 3px solid #000;
+	outline-offset: -8px;
+	box-shadow: 0 2px 0 rgba(0,0,0,.3);
+	opacity: 0.9;
+}
+
+.t6-buttons-block {
+	padding: 27px 30px;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+}
+.t6-buttons-block_theme_dark {
+	background-color: #333;
+}
+.t6-button-section__button-block {
+	margin-top: 15px;
+}
+.t6-buttons-block__buttons-row {
+	margin-top: 15px;
+}
+.t6-buttons-block__buttons-row:first-child {
+	margin-top: 0;
+}
+
+.t6-button {
+	padding: 6px 8px;
+	font-weight: bold;
+	color: #fff;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	box-shadow: 0 1.5px 2px rgba(0,0,0,.6);
+	cursor: pointer;
+}
+.t6-buttons-block__button {
+	vertical-align: bottom;
+}
+.t6-button_size_big {
+	font-size: 20px;
+}
+.t6-button_size_medium {
+	font-size: 14px;
+}
+.t6-button_size_small {
+	font-size: 10px;
+}
+.t6-button_theme_pink {
+	background: linear-gradient(#e743a3, #e22192);
+	box-shadow: 0 1.5px 1.5px #c40877, 0 3px 3px rgba(0,0,0,.3);
+}
+.t6-button_theme_pink:hover {
+	background: linear-gradient(#e22192, #e743a3);
+}
+.t6-button_theme_green {
+	background: linear-gradient(#a7cb39, #9dc819);
+	box-shadow: 0 1.5px 1.5px #7d8b52, 0 3px 3px rgba(0,0,0,.3);
+}
+.t6-button_theme_green:hover {
+	background: linear-gradient(#9dc819, #a7cb39);
+}
+.t6-button_theme_blue {
+	background: linear-gradient(#4a95e9, #3f8fe9);
+	box-shadow: 0 1.5px 1.5px #2471c8, 0 3px 3px rgba(0,0,0,.3);
+	vertical-align: middle;
+}
+.t6-button_theme_blue:hover {
+	background: linear-gradient(#3f8fe9, #4a95e9);
+}
+.t6-button_theme_red {
+	background: linear-gradient(#ea4949, #eb3d3d);
+	box-shadow: 0 1.5px 1.5px #cb2222, 0 3px 3px rgba(0,0,0,.3);
+	vertical-align: middle;
+}
+.t6-button_theme_red:hover {
+	background: linear-gradient(#eb3d3d, #ea4949);
+}
+.t6-button_theme_orange {
+	background: linear-gradient(#ff7628, #ff6e1a);
+	box-shadow: 0 1.5px 1.5px #e15000, 0 3px 3px rgba(0,0,0,.3);
+}
+.t6-button_theme_orange:hover {
+	background: linear-gradient(#ff6e1a, #ff7628);
+}
+.t6-button_theme_yellow {
+	background: linear-gradient(#ffc74c, #ffbe2d);
+	box-shadow: 0 1.5px 1.5px #e19f12, 0 3px 3px rgba(0,0,0,.3);
+}
+.t6-button_theme_yellow:hover {
+	background: linear-gradient(#ffbe2d, #ffc74c);
+}
+
+.t6-mixed-section {
+	margin: 100px 0;
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+}
+.t6-mixed-section__soc-backtround {
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+.t6-mixed-section__row {
+	padding: 30px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.t6-mixed-section__button-col {
+	width: calc(100%/3);
+	text-align: center;
+}
