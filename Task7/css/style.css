@@ -1,0 +1,55 @@
+.cards-section {
+
+}
+.cards-section__text-field {
+	
+}
+.cards-section__title {
+	margin: 0;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+.cards-section__paragraph {
+	margin-top: 30px;
+	font-size: 18px;
+	line-height: 1.4;
+}
+.cards-section__card {
+	margin-top: 30px;
+	line-height: 1.4;
+}
+
+.contact-section__form-grid {
+	display: flex;
+	justify-content: space-between;
+	padding: 50px 0;
+}
+.contact-section__input-field {
+	width: calc(25% - 22.5px);
+}
+.contact-section__input {
+	height: 2.9rem !important;
+	margin-bottom: 0 !important;
+}
+.contact-section__button {
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+	height: 3rem;
+}
+@media only screen and (max-width: 768px){
+	.contact-section__form-grid {
+		flex-wrap: wrap;
+	}
+	.contact-section__input-field {
+		width: calc(50% - 15px);
+	}
+}
+@media only screen and (max-width: 400px){
+	.contact-section__input-field {
+		width: 100%;
+	}
+	.contact-section__input-field:not(:last-child){
+		margin-top: 0;
+	}
+}
