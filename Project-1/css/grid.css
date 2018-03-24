@@ -1,0 +1,24 @@
+.az-row {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 100%;
+}
+
+.az-row__col-lg-half {
+	width: 50%;
+}
+@media only screen and (max-width: 1200px){
+	.az-row__col-lg-half {
+		width: 100%;
+	}
+}
+
+.az-row__col-md-half {
+	width: 50%;
+}
+@media only screen and (max-width: 768px){
+	.az-row__col-md-half {
+		width: 100%;
+	}
+}
