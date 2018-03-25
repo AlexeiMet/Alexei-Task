@@ -19,6 +19,7 @@ html {
 
 *::selection {
 	background-color: var(--accent-1-color);
+	background-color: #e4ae58;
 	color: #fff;
 }
 
@@ -26,7 +27,7 @@ html {
 	font-family: SourceSansPro;
 	line-height: 1.75;
 	font-size: 15px;
-	font-weight: 400;
+	font-weight: 500;
 	color: var(--text-dark-color);
 	scroll-behavior: smooth;
 }
@@ -38,7 +39,9 @@ html {
 	overflow: hidden;
 }
 
+
 /***********************FIRSTSCREEN SECTION*************************/
+
 .az-main-page__fullscreen-section {
 	height: 100vh;
 	min-height: 660px;
@@ -52,7 +55,8 @@ html {
 
 .az-fullscreen-section__bg-block {
 	height: 100%;
-	background: url(../img/5.jpg) center / cover;
+	background: url(../img/5.jpg) -90% 0 / contain;
+	background-attachment: fixed;
 }
 @media only screen and (max-width: 1200px) {
 	.az-fullscreen-section__bg-block {
@@ -67,8 +71,8 @@ html {
 }
 @media only screen and (max-width: 567px) {
 	.az-fullscreen-section__bg-block {
-		height: 50px;
-		line-height: 50px;
+		height: 60rem;
+		line-height: 60rem;
 		background: linear-gradient(rgba(255,255,255,.6), rgba(255,255,255,.6)),
 	                url(../img/5.jpg) center / cover;
 	}
@@ -160,6 +164,7 @@ html {
 @media (any-hover: hover){
 	.az-header__menu-link:hover {
 		color: var(--accent-1-color);
+		color: #e4ae58;;
 	}
 }
 
@@ -293,14 +298,22 @@ html {
 	margin-bottom: 20px;
 	font-size: 14px;
 	font-weight: 600;
-	color: var(--text-dim-color);
 	text-transform: uppercase;
+}
+
+.az-text_dim {
+	color: var(--text-dim-color);
 }
 
 .az-main-title {
 	font-size: 40rem;
+	font-weight: 400;
 	line-height: 1.2;
 }
+.az-main-title_light {
+	color: var(--text-light-color);
+}
+
 .az-main-title__highlight {
 	font-weight: 500;
 }
@@ -308,7 +321,6 @@ html {
 .az-intro-block__start-block-content-paragraph {
 	margin-top: 20px;
 	font-weight: 500;
-	color: var(--text-dim-color);
 }
 
 .az-intro-block__start-block-content-button {
@@ -330,4 +342,83 @@ html {
 		color: var(--accent-1-color);
 		background-color: var(--text-dark-color);
 	}
+}
+
+
+/***********************ABOUT SECTION*************************/
+
+.az-about-section {
+
+}
+
+.az-content-block {
+	height: 100%;
+	padding: 43rem 35rem;
+}
+
+.az-about-section__descr-block {
+
+}
+
+.az-content-block__subtitle {
+	margin: 15px 0 30px;
+}
+.az-content-block__subtitle_bright {
+	color: var(--accent-2-color);
+}
+.az-content-block__subtitle_light {
+	color: var(--text-light-color);
+}
+
+.az-about-section__descr-block-paragraph {
+	margin-top: 15px;
+}
+
+
+.az-about-section__bg-block {
+	min-height: 300px;
+	background: url(../img/1.jpg) 160px 0 / cover;
+	background-attachment: fixed;
+}
+
+body {
+	height: 2000px;
+}
+
+.az-about-section__skills-progress-block {
+	background-color: var(--accent-1-color);
+}
+.az-invert-theme *::selection {
+	background-color: #fff;
+	color: var(--accent-1-color);
+}
+
+.az-about-section__skill-progress-descr {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 13px;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.az-text_dark {
+	color: var(--dark-color);
+}
+.az-text_light {
+	color: var(--text-light-color);
+}
+
+.az-about-section__skill-progress-bar {
+	height: 3px;
+	margin-top: 5px;
+}
+.az-about-section__skill-progress-bar_fd {
+	background: linear-gradient(to right, var(--dark-color) 90%, #fff 90%);
+}
+.az-about-section__skill-progress-bar_bp {
+	background: linear-gradient(to right, var(--dark-color) 70%, #fff 70%);
+}
+.az-about-section__skill-progress-bar_hc {
+	background: linear-gradient(to right, var(--dark-color) 80%, #fff 80%);
+
 }
