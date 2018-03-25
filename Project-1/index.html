@@ -5,6 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Project 1</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/rem.css">
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body class="az-page">
@@ -38,13 +42,13 @@
 									<a href="#about-section" class="az-header__menu-link">About Me</a>
 								</li>
 								<li class="az-header__menu-item">
-									<a href="#" class="az-header__menu-link">Experiences</a>
+									<a href="#experience-section" class="az-header__menu-link">Experiences</a>
 								</li>
 								<li class="az-header__menu-item">
-									<a href="#" class="az-header__menu-link">Testimonial</a>
+									<a href="#testimonial-section" class="az-header__menu-link">Testimonial</a>
 								</li>
 								<li class="az-header__menu-item">
-									<a href="#" class="az-header__menu-link">Contact</a>
+									<a href="#contact-section" class="az-header__menu-link">Contact</a>
 								</li>
 								<div class="az-header__menu-item-soc">
 									<a href="#" class="az-header__menu-item-soc-link az-header__menu-item-soc-link_twitter"></a>
@@ -59,7 +63,7 @@
 								<h4 class="az-intro-block__start-block-secondary-title az-text_dim">Welcome to my website</h4>
 								<h1 class="az-main-title">Hello, I am <span class="az-main-title__highlight">Stimulus</span> currently based in New York</h1>
 								<p class="az-intro-block__start-block-content-paragraph az-text_dim">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate officiis natus placeat, ex magnam fugit pariatur molestias totam error animi! Doloribus earum ex quas mollitia assumenda laudantium doloremque ipsa vero.</p>
-								<a href="#" class="az-intro-block__start-block-content-button">Get started</a>
+								<a href="#contact-section" class="az-intro-block__start-block-content-button">Get started</a>
 							</div>
 						</div>
 					</div>
@@ -68,13 +72,14 @@
 			</div>
 		</section>
 
+
 		<section class="az-about-section" id="about-section">
 			<div class="az-row">
 				
 				<div class="az-row__col-lg-half">
 					<div class="az-content-block az-about-section__descr-block">
 						<h3 class="az-main-title">Donec auctor</h3>
-						<h4 class="az-content-block__subtitle az-content-block__subtitle_bright">Sed vulputate vitae diam quis bibendum</h4>
+						<h4 class="az-content-block__subtitle az-text_bright">Sed vulputate vitae diam quis bibendum</h4>
 						<div class="az-text_dim">
 							<p class="az-about-section__descr-block-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit eligendi, sunt iusto illo aliquam in sapiente molestias fugiat. Illo sequi, vitae qui quasi error iure?</p>
 							<p class="az-about-section__descr-block-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit saepe iusto nobis et omnis, officia corrupti quia temporibus.</p>
@@ -88,9 +93,9 @@
 							<div class="az-content-block az-about-section__bg-block"></div>
 						</div>
 						<div class="az-row__col-md-half">
-							<div class="az-content-block az-about-section__skills-progress-block az-invert-theme">
-								<h3 class="az-main-title az-main-title_light">My Scills</h3>
-								<h4 class="az-content-block__subtitle az-content-block__subtitle_light">Photoshop. HTML CSS JS. Web Design.</h4>
+							<div class="az-content-block az-about-section__skills-progress-block">
+								<h3 class="az-main-title">My Scills</h3>
+								<h4 class="az-content-block__subtitle">Photoshop. HTML CSS JS. Web Design.</h4>
 								<div class="az-about-section__skill-progress">
 									<div class="az-about-section__skill-progress-descr">
 										<span class="az-text_dark">Frontend Design</span><span class="az-text_light">90%</span>
@@ -117,20 +122,41 @@
 			</div>
 
 			<div class="az-row">
-				
-				<div class="az-row__col-lg-half">
-					<div class="az-row__col-lg-half">
-						<div class="az-row">
 
+				<div class="az-row__col-lg-half">
+					<div class="az-row">
+						<div class="az-row__col-md-half az-row__col-md-half_order-md-1">
+							<div class="az-content-block az-content-block_theme-accent az-about-section__skill-block">
+								<div class="az-about-section__skill-block-icon az-about-section__skill-block-icon_monitor"></div>
+								<h4 class="az-about-section__skill-block-title">Interface Design</h4>
+								<p class="az-about-section__skill-block-descr">Phasellus vulputate tellus nec tortor varius elementum. Curabitur at pulvinar ante.</p>
+							</div>
+						</div>
+						<div class="az-row__col-md-half">
+							<div class="az-content-block az-content-block_theme-bright az-about-section__skill-block">
+								<div class="az-about-section__skill-block-icon az-about-section__skill-block-icon_send"></div>
+								<h4 class="az-about-section__skill-block-title">Media Strategy</h4>
+								<p class="az-about-section__skill-block-descr">Curabitur at pulvinar ante. Duiz dui urna, faucibus eget felis eu, iaculis congue sem.</p>
+							</div>
 						</div>
 					</div>
 				</div>
 
 				<div class="az-row__col-lg-half">
-					<div class="az-row__col-lg-half">
-						<div class="az-row">
-							<div class="az-row__col-md-half"></div>
-							<div class="az-row__col-md-half"></div>
+					<div class="az-row">
+						<div class="az-row__col-md-half">
+							<div class="az-content-block az-content-block_theme-dark az-about-section__skill-block">
+								<div class="az-about-section__skill-block-icon az-about-section__skill-block-icon_table"></div>
+								<h4 class="az-about-section__skill-block-title">Mobile App</h4>
+								<p class="az-about-section__skill-block-descr">Mauris convallis eros massa, vitae euismod arce tempus ut. Quisque viverra iaculis.</p>
+							</div>
+						</div>
+						<div class="az-row__col-md-half">
+							<div class="az-content-block az-about-section__skill-block">
+								<div class="az-about-section__skill-block-icon az-about-section__skill-block-icon_code"></div>
+								<h4 class="az-about-section__skill-block-title">Coding</h4>
+								<p class="az-about-section__skill-block-descr">Mauris convallis eros massa, vitae euismod arce tempus ut. Quisque viverra iaculis.</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -138,7 +164,174 @@
 			</div>
 		</section>
 
+
+		<section class="az-experience-section" id="experience-section">
+			<div class="az-row">
+				
+				<div class="az-row__col-lg-half">
+					<div class="az-content-block az-experience-section__bg-block az-experience-section__bg-block_first"></div>
+				</div>
+
+				<div class="az-row__col-lg-half">
+					<div class="az-content-block az-content-block_theme-bright az-experience-section__content-block">
+						<h3 class="az-main-title">My Experience</h3>
+						<h4 class="az-content-block__subtitle">Previous companies and my tasks</h4>
+						<div class="az-experience-section__content-block-item">
+							<div class="az-experience-section__content-block-item-icon"></div>
+							<div class="az-experience-section__content-block-item-text">
+								<h4 class="az-experience-section__content-block-item-title">Graphic Designer <span class="az-experience-section__content-block-item-title-highlight">2014 Jul - 2015 Sep</span></h4>
+								<p class="az-experience-section__content-block-item-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+						<div class="az-experience-section__content-block-item">
+							<div class="az-experience-section__content-block-item-icon"></div>
+							<div class="az-experience-section__content-block-item-text">
+								<h4 class="az-experience-section__content-block-item-title">Web Designer <span class="az-experience-section__content-block-item-title-highlight">2015 Oct - 2017 Jan</span></h4>
+								<p class="az-experience-section__content-block-item-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="az-row">
+
+				<div class="az-row__col-lg-half">
+					<div class="az-content-block az-content-block_theme-accent az-experience-section__content-block">
+						<h3 class="az-main-title">My Education</h3>
+						<h4 class="az-content-block__subtitle">In cursus orci noni ipsum gravida dignissim</h4>
+						<div class="az-experience-section__content-block-item">
+							<div class="az-experience-section__content-block-item-icon"></div>
+							<div class="az-experience-section__content-block-item-text">
+								<h4 class="az-experience-section__content-block-item-title">Master in Design <span class="az-experience-section__content-block-item-title-highlight">2012 Jan - 2014 May</span></h4>
+								<p class="az-experience-section__content-block-item-descr">Etiam iaculis elit in mauris ullamcorper auctor. Proin a sapien id orci ullamcorper dignissim eu in neque.</p>
+							</div>
+						</div>
+						<div class="az-experience-section__content-block-item">
+							<div class="az-experience-section__content-block-item-icon"></div>
+							<div class="az-experience-section__content-block-item-text">
+								<h4 class="az-experience-section__content-block-item-title">Bachelor of Arts <span class="az-experience-section__content-block-item-title-highlight">2008 May - 2011 Dec</span></h4>
+								<p class="az-experience-section__content-block-item-descr">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="az-row__col-lg-half">
+					<div class="az-content-block az-content-block_theme-accent az-experience-section__bg-block az-experience-section__bg-block_second"></div>
+				</div>
+				
+			</div>
+		</section>
+
+
+		<section class="az-testimonial-section" id="testimonial-section">
+			<div class="az-testimonial-section__wrapper">
+				
+				<div class="az-testimonial-section__content az-text_light">
+					<div class="az-testimonial-section__icon"></div>
+					<h3 class="az-main-title">Proin lobortis eu diam et facilisis. Fusce nisi nibh, molestie in vestibulum quis, auctor et orci.</h3>
+					<p class="az-testimonial-section__paragraph az-text_dim">Curabitur at pulvinar ante. Duis dui urna, faucibus eget felis eu, iaculis congue sem.</p>
+				</div>
+
+			</div>
+		</section>
+
+
+		<section class="az-contact-section" id="contact-section">
+			<div class="az-row">
+				
+				<div class="az-row__col-lg-half">
+					<div class="az-content-block az-content-block_theme-bright az-contact-section__form-block">
+						<h3 class="az-main-title">Say hello</h3>
+						<h4 class="az-content-block__subtitle">Integer ut consectetur est. In cursus orci non ipsum gravida dignissim.</h4>
+						<div class="az-contact-section__form">
+							<form action="#" class="az-contact-form">
+								<div class="az-contact-form__content">
+									<div class="az-contact-form__input-block">
+										<input class="az-contact-form__input" type="text" name="name">
+										<label class="az-contact-form__input-placeholder">Your Name</label>
+									</div>
+									<div class="az-contact-form__input-block">
+										<input class="az-contact-form__input" type="text" name="email">
+										<label class="az-contact-form__input-placeholder">Your Email</label>
+									</div>
+									<div class="az-contact-form__input-block">
+										<textarea class="az-contact-form__textarea" rows="5" name="message"></textarea>
+										<label class="az-contact-form__input-placeholder">Write your message...</label>
+									</div>
+									<button class="az-contact-form__button">Send</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+
+				<div class="az-row__col-lg-half">
+					<div class="az-row">
+						
+						<div class="az-row__col-md-half">
+							<div class="az-content-block az-contact-section__bg-block"></div>
+						</div>
+
+						<div class="az-row__col-md-half">
+							<div class="az-content-block az-content-block_theme-dark az-contact-section__contacts-block">
+								<h4 class="az-contact-section__contacts-block-title">Visit My Office</h4>
+								<address class="az-contact-section__contacts-block-address az-text_dim">456 New Street 22000, New York City, USA</address>
+								<h4 class="az-contact-section__contacts-block-title">Contact.</h4>
+								<ul class="az-contact-section__contacts-block-contacts">
+									<li class="az-contact-section__contacts-block-contact az-contact-section__contacts-block-contact_phone"><a href="tel:0101100220" class="az-contact-section__contacts-block-contact-link">01-0110-0220</a></li>
+									<li class="az-contact-section__contacts-block-contact az-contact-section__contacts-block-contact_mail"><a href="mailto:hello@company.co" class="az-contact-section__contacts-block-contact-link">hello@company.co</a></li>
+									<li class="az-contact-section__contacts-block-contact az-contact-section__contacts-block-contact_web"><a href="#" class="az-contact-section__contacts-block-contact-link">company.co</a></li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+
+		<footer class="az-footer">
+			<div class="az-footer__content">
+				<p class="az-footer__copyright">Copyright 2016 Your Company | Design: <a href="#" class="az-footer__copyright-link">templatemo</a></p>
+				<ul class="az-footer__soc">
+					<li class="az-footer__soc-item">
+						<a href="#" class="az-footer__soc-link az-footer__soc-link_facebook"></a>
+					</li>
+					<li class="az-footer__soc-item">
+						<a href="#" class="az-footer__soc-link az-footer__soc-link_twitter"></a>
+					</li>
+					<li class="az-footer__soc-item">
+						<a href="#" class="az-footer__soc-link az-footer__soc-link_google"></a>
+					</li>
+					<li class="az-footer__soc-item">
+						<a href="#" class="az-footer__soc-link az-footer__soc-link_drible"></a>
+					</li>
+					<li class="az-footer__soc-item">
+						<a href="#" class="az-footer__soc-link az-footer__soc-link_linkedin"></a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+
 	</main>
 	
+<!-- <script>
+	//FIX BACKGROUND ATTACHMENT'S JUMPS IN IE11 BY REMOVING SMOOTH SCROLLING
+
+	if(navigator.userAgent.match(/Trident\/7\./)) {
+	    document.querySelector("body").addEventListener("mousewheel", function (e) {
+	        e.preventDefault();
+
+	        var wheelDelta = e.wheelDelta;
+	        var currentScrollPosition = window.pageYOffset;
+	        window.scrollTo(0, currentScrollPosition - wheelDelta);
+	    });
+	}
+</script> -->
 </body>
 </html>
