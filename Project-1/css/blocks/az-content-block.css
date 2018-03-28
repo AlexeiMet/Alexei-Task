@@ -1,0 +1,30 @@
+.az-content-block {
+	height: 100%;
+}
+
+.az-content-block__element {
+	height: 100%;
+	padding: 43px 35rem 55px;
+}
+
+.az-content-block__element_theme-accent {
+	background-color: #e4ae58;
+}
+.az-content-block__element_theme-bright {
+	background-color: #e9714c;
+	color: #fff;
+}
+.az-content-block__element_theme-dark {
+	background-color: #161616;
+	color: #fff;
+}
+.az-content-block__element_theme-accent {
+	background-color: #e4ae58;
+	color: #fff;
+}
+
+.az-content-block__element_bg {
+	min-height: 300rem;
+	background-position: center;
+	background-size: cover;
+}
