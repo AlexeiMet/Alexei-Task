@@ -1,0 +1,68 @@
+.az-about-section {
+
+}
+
+
+.az-about-section__descr-block-paragraph {
+	margin-top: 15px;
+}
+
+
+.az-skills-progress-block {
+}
+
+.az-skills-progress-block__descr {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 16px;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.az-skills-progress-block__bar {
+	height: 3px;
+	margin-top: 5px;
+}
+.az-skills-progress-block__bar_fd {
+	background: linear-gradient(to right, #161616 90%, #fff 90%);
+}
+.az-skills-progress-block__bar_bp {
+	background: linear-gradient(to right, #161616 70%, #fff 70%);
+}
+.az-skills-progress-block__bar_hc {
+	background: linear-gradient(to right, #161616 80%, #fff 80%);
+}
+
+
+.az-featured-block {
+	text-align: center;
+}
+
+.az-featured-block__icon {
+	font-family: FontAwesome;
+	font-size: 40px;
+	line-height: 1;
+}
+.az-featured-block__icon_monitor:before {
+	content: "\f108";
+}
+.az-featured-block__icon_send:before {
+	content: "\f1d8";
+}
+.az-featured-block__icon_table:before {
+	content: "\f0ce";
+}
+.az-featured-block__icon_code:before {
+	content: "\f13b";
+}
+
+.az-featured-block__title {
+	margin: 30px 0 10px;
+	font-size: 28px;
+	font-weight: 400;
+}
+
+.az-featured-block__descr {
+	margin: 0 auto;
+	max-width: 270px;
+}

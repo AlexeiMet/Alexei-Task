@@ -1,0 +1,22 @@
+.az-testimonial-section__element {
+	padding: 130rem 35rem 110rem;
+	background: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)), url(../../img/6.jpg) center / cover;
+}
+
+.az-testimonial-section__content {
+	max-width: 870px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.az-featured-block__icon_big {
+	font-size: 50px;
+}
+
+.az-featured-block__descr_flex {
+	max-width: none;
+}
+
+.az-featured-block__icon_star:before {
+	content: "\f005";
+}

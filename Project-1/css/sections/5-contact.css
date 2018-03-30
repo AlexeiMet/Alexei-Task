@@ -1,0 +1,122 @@
+.az-contact-form__input-block {
+	position: relative;
+	margin-bottom: 30rem;
+}
+
+.az-contact-form__input-placeholder {
+	position: absolute;
+	top: 0;
+	left: 12px;
+	line-height: 44px;
+	font-size: 17px;
+	font-weight: 500;
+	color: #fff;
+	pointer-events: none;
+	transition: .3s;
+}
+
+.az-contact-form__input {
+	display: block;
+	width: 100%;
+	height: 44px;
+	line-height: 44px;
+	padding-left: 12px;
+	border: none;
+	border-bottom: 1.5px solid #fff;
+	font-family: SourceSansPro, sans-serif;
+	font-size: 17px;
+	color: #fff;
+	background-color: transparent;
+	outline: none;
+	transition: .3s;
+}
+.az-contact-form__input:focus {
+	border-bottom-color: #e4ae58;
+	box-shadow: 0 2px 2px -2px #e4ae58;
+}
+
+.az-contact-form__textarea {
+	display: block;
+	width: 100%;
+	padding-left: 12px;
+	border: none;
+	border-bottom: 1.5px solid #fff;
+	font-family: SourceSansPro, sans-serif;
+	font-size: 17px;
+	line-height: 44px;
+	color: #fff;
+	background-color: transparent;
+	outline: none;
+	resize: vertical;
+	transition: .3s;
+}
+.az-contact-form__textarea:focus {
+	border-bottom-color: #e4ae58;
+	box-shadow: 0 2px 2px -2px #e4ae58;
+}
+
+.az-contact-form__textarea:focus + .az-contact-form__input-placeholder, .az-contact-form__input:focus + .az-contact-form__input-placeholder {
+	color: #e4ae58;
+	top: -27px;
+	left: 0;
+	font-size: 14px;
+}
+
+.az-contact-form__button {
+	width: 100%;
+	max-width: 300px;
+	padding: 12px;
+	background-color: #fff;
+	font-size: 17px;
+	border-radius: 9999px;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	transition: .3s;
+}
+.az-contact-form__button:hover {
+	background-color: #e4ae58;
+	color: #fff;
+}
+
+
+.az-contacts-block__address {
+	margin-bottom: 40px;
+}
+
+.az-contacts-block__title {
+	margin-bottom: 15px;
+	font-size: 26px;
+	font-weight: 400;
+}
+
+.az-contacts-block__contact:not(:last-child) {
+	margin-bottom: 10px;
+}
+.az-contacts-block__contact:before {
+	margin-right: 14px;
+	font-family: FontAwesome;
+	font-size: 16px;
+	color: #9e9391;
+}
+.az-contacts-block__contact_phone:before {
+	content: "\f095";
+}
+.az-contacts-block__contact_mail:before {
+	content: "\f003";
+}
+.az-contacts-block__contact_web:before {
+	content: "\f0ac";
+}
+
+.az-contacts-block__contact-link {
+	text-decoration: none;
+	color: #9e9391;
+	transition: color .15s;
+}
+.az-contacts-block__contact-link_accent {
+	color: #e4ae58;
+}
+.az-contacts-block__contact-link_accent:hover {
+	color: #e9714c;
+}
