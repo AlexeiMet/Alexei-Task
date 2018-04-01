@@ -29,3 +29,11 @@
 .az-text_highlight {
 	font-weight: 500;
 }
+
+.az-text_offset-top {
+	margin-top: 15px;
+}
+
+.az-text_nowrap {
+	white-space: nowrap;
+}

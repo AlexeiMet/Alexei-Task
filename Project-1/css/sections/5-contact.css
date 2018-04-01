@@ -30,7 +30,8 @@
 	outline: none;
 	transition: .3s;
 }
-.az-contact-form__input:focus {
+.az-contact-form__input:focus,
+.az-contact-form__input:valid {
 	border-bottom-color: #e4ae58;
 	box-shadow: 0 2px 2px -2px #e4ae58;
 }
@@ -38,24 +39,30 @@
 .az-contact-form__textarea {
 	display: block;
 	width: 100%;
+	height: 223rem;
 	padding-left: 12px;
+	padding-top: 10px;
 	border: none;
 	border-bottom: 1.5px solid #fff;
 	font-family: SourceSansPro, sans-serif;
 	font-size: 17px;
-	line-height: 44px;
 	color: #fff;
 	background-color: transparent;
 	outline: none;
 	resize: vertical;
+	overflow-y: hidden;
 	transition: .3s;
 }
-.az-contact-form__textarea:focus {
+.az-contact-form__textarea:focus,
+.az-contact-form__textarea:valid {
 	border-bottom-color: #e4ae58;
 	box-shadow: 0 2px 2px -2px #e4ae58;
 }
 
-.az-contact-form__textarea:focus + .az-contact-form__input-placeholder, .az-contact-form__input:focus + .az-contact-form__input-placeholder {
+.az-contact-form__textarea:focus + .az-contact-form__input-placeholder,
+.az-contact-form__input:focus + .az-contact-form__input-placeholder,
+.az-contact-form__textarea:valid + .az-contact-form__input-placeholder,
+.az-contact-form__input:valid + .az-contact-form__input-placeholder {
 	color: #e4ae58;
 	top: -27px;
 	left: 0;

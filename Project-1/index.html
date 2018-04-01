@@ -36,7 +36,7 @@
 						<div class="az-fullscreen-section-block">
 
 							<div class="az-fullscreen-section-block__bg-block">
-								<div class="az-fullscreen-section-block__bg-block-title">Stimulus</div>
+								<div class="az-logo az-fullscreen-section-block__logo">Stimulus</div>
 							</div>
 
 						</div>
@@ -46,7 +46,7 @@
 						<div class="az-fullscreen-section-block">
 
 							<div class="az-intro-block az-fullscreen-section-block__content-block">
-								<header class="az-intro-block__header az-header">
+								<header class="az-header az-intro-block__header">
 									<input type="checkbox" class="az-header__menu-toggle-input" id="header-menu-toggle">
 									<label for="header-menu-toggle" class="az-header__menu-toggle">
 										<span class="az-header__menu-toggle-bar"></span>
@@ -77,11 +77,12 @@
 											<a href="#" class="az-header__menu-item-soc-link az-header__menu-item-soc-link_instagram"></a>
 										</div>
 									</ul>
+									<div class="az-logo az-header__logo">Stimulus</div>
 								</header>
 								<div class="az-intro-block__start-block">
 									<div class="az-intro-block__start-block-content">
 										<h4 class="az-intro-block__start-block-secondary-title az-text_dim">Welcome to my website</h4>
-										<h1 class="az-text az-text_prior-title">Hello, I am <span class="az-text az-text_highlight">Stimulus</span> currently based in New York</h1>
+										<h1 class="az-text az-text_prior-title">Hello, I am <span class="az-text az-text_highlight">Stimulus</span> currently based in <span class="az-text az-text_nowrap">New York</span> City</h1>
 										<p class="az-intro-block__start-block-content-paragraph az-text az-text_dim">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate officiis natus placeat, ex magnam fugit pariatur molestias totam error animi! Doloribus earum ex quas mollitia assumenda laudantium doloremque ipsa vero.</p>
 										<a href="#about-section" class="az-intro-block__start-block-content-button">Get started</a>
 									</div>
@@ -98,20 +99,20 @@
 
 
 		<section class="az-about-section" id="about-section">
+			<div class="az-fix-anch-wrapper">
 
 			<div class="az-grid">
-
 				<div class="az-grid__row">
 					
 					<div class="az-grid__col-lg-half">
-						<div class="az-about-section-block az-content-block">
+						<div class="az-content-block">
 
 							<div class="az-content-block__element">
 								<h3 class="az-text az-text_prior-title">Donec auctor</h3>
 								<h4 class="az-text az-text_prior-subtitle az-text_bright">Sed vulputate vitae diam quis bibendum</h4>
 								<div class="az-text az-text_dim">
-									<p class="az-about-section__descr-block-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit eligendi, sunt iusto illo aliquam in sapiente molestias fugiat. Illo sequi, vitae qui quasi error iure?</p>
-									<p class="az-about-section__descr-block-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit saepe iusto nobis et omnis, officia corrupti quia temporibus.</p>
+									<p class="az-text az-text_offset-top">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit eligendi, sunt iusto illo aliquam in sapiente molestias fugiat. Illo sequi, vitae qui quasi error iure?</p>
+									<p class="az-text az-text_offset-top">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit saepe iusto nobis et omnis, officia corrupti quia temporibus.</p>
 								</div>
 							</div>
 
@@ -135,7 +136,7 @@
 									<div class="az-content-block">
 
 										<div class="az-content-block__element az-content-block__element_theme-accent">
-											<h3 class="az-text az-text_prior-title">My Scills</h3>
+											<h3 class="az-text az-text_prior-title">My Skills</h3>
 											<h4 class="az-text az-text_prior-subtitle">Photoshop. HTML CSS JS. Web Design.</h4>
 											<div class="az-skills-progress-block">
 												<div class="az-skills-progress-block__descr">
@@ -247,11 +248,13 @@
 
 				</div>
 			</div>
-
+	
+			</div>
 		</section>
 
 
 		<section class="az-experience-section" id="experience-section">
+			<div class="az-fix-anch-wrapper">
 
 			<div class="az-grid">
 				<div class="az-grid__row">
@@ -325,7 +328,7 @@
 					<div class="az-grid__col-lg-half">
 						<div class="az-content-block">
 
-						<div class="az-content-block__element az-content-block__element_bg" style="background-image: url(img/3.jpg)"></div>
+							<div class="az-content-block__element az-content-block__element_bg" style="background-image: url(img/3.jpg)"></div>
 
 						</div>
 					</div>
@@ -333,10 +336,12 @@
 				</div>
 			</div>
 
+			</div>
 		</section>
 
 
 		<section class="az-testimonial-section" id="testimonial-section">
+			<div class="az-fix-anch-wrapper">
 			<div class="az-testimonial-section__element">
 				
 				<div class="az-featured-block az-testimonial-section__content">
@@ -346,10 +351,12 @@
 				</div>
 
 			</div>
+			</div>
 		</section>
 
 
 		<section class="az-contact-section" id="contact-section">
+			<div class="az-fix-anch-wrapper">
 
 			<div class="az-grid">
 				<div class="az-grid__row">
@@ -363,15 +370,15 @@
 								<form action="#" class="az-contact-form">
 									<div class="az-contact-form__content">
 										<div class="az-contact-form__input-block">
-											<input class="az-contact-form__input" type="text" name="name">
+											<input class="az-contact-form__input" type="text" name="name" required>
 											<label class="az-contact-form__input-placeholder">Your Name</label>
 										</div>
 										<div class="az-contact-form__input-block">
-											<input class="az-contact-form__input" type="text" name="email">
+											<input class="az-contact-form__input" type="text" name="email" required>
 											<label class="az-contact-form__input-placeholder">Your Email</label>
 										</div>
 										<div class="az-contact-form__input-block">
-											<textarea class="az-contact-form__textarea" rows="5" name="message"></textarea>
+											<textarea class="az-contact-form__textarea" name="message" required></textarea>
 											<label class="az-contact-form__input-placeholder">Write your message...</label>
 										</div>
 										<button class="az-contact-form__button">Send</button>
@@ -386,7 +393,7 @@
 
 						<div class="az-grid">
 							<div class="az-grid__row">
-								
+
 								<div class="az-grid__col-md-half">
 									<div class="az-content-block">
 
@@ -421,7 +428,8 @@
 
 				</div>
 			</div>
-
+			
+			</div>
 		</section>
 
 
